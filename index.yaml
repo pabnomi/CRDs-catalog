@@ -207,6 +207,11 @@ agentgateway.dev:
     filename: agentgateway.dev/agentgatewaymodel_v1alpha1.json
     kind: agentgatewaymodel
     name: agentgatewaymodel_v1alpha1
+agents.x-k8s.io:
+  - apiVersion: agents.x-k8s.io/v1beta1
+    filename: agents.x-k8s.io/sandbox_v1beta1.json
+    kind: sandbox
+    name: sandbox_v1beta1
 aigateway.envoyproxy.io:
   - apiVersion: aigateway.envoyproxy.io/v1beta1
     filename: aigateway.envoyproxy.io/gatewayconfig_v1beta1.json
@@ -1425,6 +1430,19 @@ argoproj.io:
     filename: argoproj.io/workflowtaskset_v1alpha1.json
     kind: workflowtaskset
     name: workflowtaskset_v1alpha1
+artifact.falcosecurity.dev:
+  - apiVersion: artifact.falcosecurity.dev/v1alpha1
+    filename: artifact.falcosecurity.dev/config_v1alpha1.json
+    kind: Config
+    name: config_v1alpha1
+  - apiVersion: artifact.falcosecurity.dev/v1alpha1
+    filename: artifact.falcosecurity.dev/plugin_v1alpha1.json
+    kind: Plugin
+    name: plugin_v1alpha1
+  - apiVersion: artifact.falcosecurity.dev/v1alpha1
+    filename: artifact.falcosecurity.dev/rulesfile_v1alpha1.json
+    kind: Rulesfile
+    name: rulesfile_v1alpha1
 artifactregistry.cnrm.cloud.google.com:
   - apiVersion: artifactregistry.cnrm.cloud.google.com/v1beta1
     filename: artifactregistry.cnrm.cloud.google.com/artifactregistryrepository_v1beta1.json
@@ -1656,6 +1674,11 @@ authzed.com:
     filename: authzed.com/spicedbcluster_v1alpha1.json
     kind: SpiceDBCluster
     name: spicedbcluster_v1alpha1
+autoops.k8s.elastic.co:
+  - apiVersion: autoops.k8s.elastic.co/v1alpha1
+    filename: autoops.k8s.elastic.co/autoopsagentpolicy_v1alpha1.json
+    kind: AutoOpsAgentPolicy
+    name: autoopsagentpolicy_v1alpha1
 autopilot.k0sproject.io:
   - apiVersion: autopilot.k0sproject.io/v1beta2
     filename: autopilot.k0sproject.io/updateconfig_v1beta2.json
@@ -1705,6 +1728,11 @@ autoscaling.k8s.io:
     filename: autoscaling.k8s.io/verticalpodautoscalercheckpoint_v1.json
     kind: VerticalPodAutoscalerCheckpoint
     name: verticalpodautoscalercheckpoint_v1
+autoscaling.x-k8s.io:
+  - apiVersion: autoscaling.x-k8s.io/v1beta1
+    filename: autoscaling.x-k8s.io/capacitybuffer_v1beta1.json
+    kind: CapacityBuffer
+    name: capacitybuffer_v1beta1
 aws.m.upbound.io:
   - apiVersion: aws.m.upbound.io/v1beta1
     filename: aws.m.upbound.io/providerconfig_v1beta1.json
@@ -1770,6 +1798,11 @@ awx.ansible.com:
     filename: awx.ansible.com/awxbackup_v1beta1.json
     kind: AWXBackup
     name: awxbackup_v1beta1
+azapi.upbound.io:
+  - apiVersion: azapi.upbound.io/v1beta1
+    filename: azapi.upbound.io/providerconfig_v1beta1.json
+    kind: ProviderConfig
+    name: providerconfig_v1beta1
 azmonitoring.coreos.com:
   - apiVersion: azmonitoring.coreos.com/v1
     filename: azmonitoring.coreos.com/servicemonitor_v1.json
@@ -1826,6 +1859,27 @@ backupdr.cnrm.cloud.google.com:
     filename: backupdr.cnrm.cloud.google.com/backupdrbackupplanassociation_v1beta1.json
     kind: BackupDRBackupPlanAssociation
     name: backupdrbackupplanassociation_v1beta1
+ballast.tightlinesoftware.com:
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/clusterresourcepolicy_v1.json
+    kind: ClusterResourcePolicy
+    name: clusterresourcepolicy_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/metricssource_v1.json
+    kind: MetricsSource
+    name: metricssource_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/ballastconfig_v1.json
+    kind: BallastConfig
+    name: ballastconfig_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/workloadprofile_v1.json
+    kind: WorkloadProfile
+    name: workloadprofile_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/resourcepolicy_v1.json
+    kind: ResourcePolicy
+    name: resourcepolicy_v1
 barmancloud.cnpg.io:
   - apiVersion: barmancloud.cnpg.io/v1
     filename: barmancloud.cnpg.io/objectstore_v1.json
@@ -2589,6 +2643,14 @@ cilium.io:
     filename: cilium.io/ciliumbgpclusterconfig_v2.json
     kind: CiliumBGPClusterConfig
     name: ciliumbgpclusterconfig_v2
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumgatewayclassconfig_v2alpha1.json
+    kind: CiliumGatewayClassConfig
+    name: ciliumgatewayclassconfig_v2alpha1
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumdatapathplugin_v2alpha1.json
+    kind: CiliumDatapathPlugin
+    name: ciliumdatapathplugin_v2alpha1
 clickhouse-keeper.altinity.com:
   - apiVersion: clickhouse-keeper.altinity.com/v1
     filename: clickhouse-keeper.altinity.com/clickhousekeeperinstallation_v1.json
@@ -3774,6 +3836,70 @@ configuration.konghq.com:
     filename: configuration.konghq.com/kongvault_v1alpha1.json
     kind: KongVault
     name: kongvault_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialhmac_v1alpha1.json
+    kind: KongCredentialHMAC
+    name: kongcredentialhmac_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongpluginbinding_v1alpha1.json
+    kind: KongPluginBinding
+    name: kongpluginbinding_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongkey_v1alpha1.json
+    kind: KongKey
+    name: kongkey_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongkeyset_v1alpha1.json
+    kind: KongKeySet
+    name: kongkeyset_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongdataplaneclientcertificate_v1alpha1.json
+    kind: KongDataPlaneClientCertificate
+    name: kongdataplaneclientcertificate_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialacl_v1alpha1.json
+    kind: KongCredentialACL
+    name: kongcredentialacl_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongtarget_v1alpha1.json
+    kind: KongTarget
+    name: kongtarget_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongroute_v1alpha1.json
+    kind: KongRoute
+    name: kongroute_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcacertificate_v1alpha1.json
+    kind: KongCACertificate
+    name: kongcacertificate_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcertificate_v1alpha1.json
+    kind: KongCertificate
+    name: kongcertificate_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongservice_v1alpha1.json
+    kind: KongService
+    name: kongservice_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialbasicauth_v1alpha1.json
+    kind: KongCredentialBasicAuth
+    name: kongcredentialbasicauth_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongsni_v1alpha1.json
+    kind: KongSNI
+    name: kongsni_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialapikey_v1alpha1.json
+    kind: KongCredentialAPIKey
+    name: kongcredentialapikey_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialjwt_v1alpha1.json
+    kind: KongCredentialJWT
+    name: kongcredentialjwt_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongupstream_v1alpha1.json
+    kind: KongUpstream
+    name: kongupstream_v1alpha1
 connections.grafana.crossplane.io:
   - apiVersion: connections.grafana.crossplane.io/v1alpha1
     filename: connections.grafana.crossplane.io/metricsendpointscrapejob_v1alpha1.json
@@ -4114,6 +4240,11 @@ core.cnrm.cloud.google.com:
     filename: core.cnrm.cloud.google.com/configconnectorcontext_v1beta1.json
     kind: ConfigConnectorContext
     name: configconnectorcontext_v1beta1
+core.libopenstorage.org:
+  - apiVersion: core.libopenstorage.org/v1
+    filename: core.libopenstorage.org/storagecluster_v1.json
+    kind: storagecluster
+    name: storagecluster_v1
 core.openfeature.dev:
   - apiVersion: core.openfeature.dev/v1beta1
     filename: core.openfeature.dev/featureflag_v1beta1.json
@@ -5013,6 +5144,10 @@ dynatrace.com:
     filename: dynatrace.com/dynakube_v1beta5.json
     kind: dynakube
     name: dynakube_v1beta5
+  - apiVersion: dynatrace.com/v1beta6
+    filename: dynatrace.com/dynakube_v1beta6.json
+    kind: dynakube
+    name: dynakube_v1beta6
 ec2.aws.m.upbound.io:
   - apiVersion: ec2.aws.m.upbound.io/v1beta1
     filename: ec2.aws.m.upbound.io/transitgatewayconnectpeer_v1beta1.json
@@ -6392,6 +6527,10 @@ elbv2.k8s.aws:
     filename: elbv2.k8s.aws/ingressclassparams_v1beta1.json
     kind: IngressClassParams
     name: ingressclassparams_v1beta1
+  - apiVersion: elbv2.k8s.aws/v1beta1
+    filename: elbv2.k8s.aws/albtargetcontrolconfig_v1beta1.json
+    kind: ALBTargetControlConfig
+    name: albtargetcontrolconfig_v1beta1
 emrcontainers.services.k8s.aws:
   - apiVersion: emrcontainers.services.k8s.aws/v1alpha1
     filename: emrcontainers.services.k8s.aws/jobrun_v1alpha1.json
@@ -6731,11 +6870,28 @@ export.kubevirt.io:
     filename: export.kubevirt.io/virtualmachineexport_v1beta1.json
     kind: VirtualMachineExport
     name: virtualmachineexport_v1beta1
+extensions.agents.x-k8s.io:
+  - apiVersion: extensions.agents.x-k8s.io/v1beta1
+    filename: extensions.agents.x-k8s.io/sandboxtemplate_v1beta1.json
+    kind: sandboxtemplate
+    name: sandboxtemplate_v1beta1
+  - apiVersion: extensions.agents.x-k8s.io/v1beta1
+    filename: extensions.agents.x-k8s.io/sandboxwarmpool_v1beta1.json
+    kind: sandboxwarmpool
+    name: sandboxwarmpool_v1beta1
+  - apiVersion: extensions.agents.x-k8s.io/v1beta1
+    filename: extensions.agents.x-k8s.io/sandboxclaim_v1beta1.json
+    kind: sandboxclaim
+    name: sandboxclaim_v1beta1
 extensions.istio.io:
   - apiVersion: extensions.istio.io/v1alpha1
     filename: extensions.istio.io/wasmplugin_v1alpha1.json
     kind: wasmplugin
     name: wasmplugin_v1alpha1
+  - apiVersion: extensions.istio.io/v1alpha1
+    filename: extensions.istio.io/trafficextension_v1alpha1.json
+    kind: trafficextension
+    name: trafficextension_v1alpha1
 external-secrets.io:
   - apiVersion: external-secrets.io/v1beta1
     filename: external-secrets.io/clustersecretstore_v1beta1.json
@@ -6803,6 +6959,10 @@ externaldns.k8s.io:
     filename: externaldns.k8s.io/dnsendpoint_v1alpha1.json
     kind: dnsendpoint
     name: dnsendpoint_v1alpha1
+  - apiVersion: externaldns.k8s.io/v1alpha1
+    filename: externaldns.k8s.io/dnsrecord_v1alpha1.json
+    kind: dnsrecord
+    name: dnsrecord_v1alpha1
 externaldns.nginx.org:
   - apiVersion: externaldns.nginx.org/v1
     filename: externaldns.nginx.org/dnsendpoint_v1.json
@@ -7073,6 +7233,55 @@ gameservices.cnrm.cloud.google.com:
     filename: gameservices.cnrm.cloud.google.com/gameservicesrealm_v1beta1.json
     kind: gameservicesrealm
     name: gameservicesrealm_v1beta1
+garage.rajsingh.info:
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garageadmintoken_v1alpha1.json
+    kind: garageadmintoken
+    name: garageadmintoken_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garageadmintoken_v1beta1.json
+    kind: GarageAdminToken
+    name: garageadmintoken_v1beta1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagenode_v1beta1.json
+    kind: GarageNode
+    name: garagenode_v1beta1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagebucket_v1alpha1.json
+    kind: GarageBucket
+    name: garagebucket_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagebucket_v1beta1.json
+    kind: GarageBucket
+    name: garagebucket_v1beta1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagecluster_v1alpha1.json
+    kind: garagecluster
+    name: garagecluster_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagereferencegrant_v1beta1.json
+    kind: GarageReferenceGrant
+    name: garagereferencegrant_v1beta1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagenode_v1alpha1.json
+    kind: garagenode
+    name: garagenode_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagekey_v1beta1.json
+    kind: GarageKey
+    name: garagekey_v1beta1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagekey_v1alpha1.json
+    kind: garagekey
+    name: garagekey_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagecluster_v1beta1.json
+    kind: GarageCluster
+    name: garagecluster_v1beta1
+  - apiVersion: garage.rajsingh.info/v1beta2
+    filename: garage.rajsingh.info/garagecluster_v1beta2.json
+    kind: GarageCluster
+    name: garagecluster_v1beta2
 gateway.envoyproxy.io:
   - apiVersion: gateway.envoyproxy.io/v1alpha1
     filename: gateway.envoyproxy.io/envoyextensionpolicy_v1alpha1.json
@@ -9232,6 +9441,15 @@ installation.mattermost.com:
     filename: installation.mattermost.com/mattermost_v1beta1.json
     kind: Mattermost
     name: mattermost_v1beta1
+instance.falcosecurity.dev:
+  - apiVersion: instance.falcosecurity.dev/v1alpha1
+    filename: instance.falcosecurity.dev/component_v1alpha1.json
+    kind: Component
+    name: component_v1alpha1
+  - apiVersion: instance.falcosecurity.dev/v1alpha1
+    filename: instance.falcosecurity.dev/falco_v1alpha1.json
+    kind: Falco
+    name: falco_v1alpha1
 instancetype.kubevirt.io:
   - apiVersion: instancetype.kubevirt.io/v1beta1
     filename: instancetype.kubevirt.io/virtualmachineinstancetype_v1beta1.json
@@ -10661,6 +10879,10 @@ logging.banzaicloud.io:
     filename: logging.banzaicloud.io/output_v1beta1.json
     kind: output
     name: output_v1beta1
+  - apiVersion: logging.banzaicloud.io/v1beta1
+    filename: logging.banzaicloud.io/axosyslog_v1beta1.json
+    kind: axosyslog
+    name: axosyslog_v1beta1
 logging.cnrm.cloud.google.com:
   - apiVersion: logging.cnrm.cloud.google.com/v1beta1
     filename: logging.cnrm.cloud.google.com/logginglogbucket_v1beta1.json
@@ -12190,6 +12412,14 @@ notification.toolkit.fluxcd.io:
     filename: notification.toolkit.fluxcd.io/alert_v1beta2.json
     kind: Alert
     name: alert_v1beta2
+  - apiVersion: notification.toolkit.fluxcd.io/v1
+    filename: notification.toolkit.fluxcd.io/provider_v1.json
+    kind: Provider
+    name: provider_v1
+  - apiVersion: notification.toolkit.fluxcd.io/v1
+    filename: notification.toolkit.fluxcd.io/alert_v1.json
+    kind: Alert
+    name: alert_v1
 notificationhubs.azure.com:
   - apiVersion: notificationhubs.azure.com/v1api20230901
     filename: notificationhubs.azure.com/notificationhub_v1api20230901.json
@@ -12974,6 +13204,11 @@ oss.grafana.o.crossplane.io:
     filename: oss.grafana.o.crossplane.io/dashboardset_v1alpha1.json
     kind: DashboardSet
     name: dashboardset_v1alpha1
+packageregistry.k8s.elastic.co:
+  - apiVersion: packageregistry.k8s.elastic.co/v1alpha1
+    filename: packageregistry.k8s.elastic.co/packageregistry_v1alpha1.json
+    kind: PackageRegistry
+    name: packageregistry_v1alpha1
 packages.eks.amazonaws.com:
   - apiVersion: packages.eks.amazonaws.com/v1alpha1
     filename: packages.eks.amazonaws.com/packagebundlecontroller_v1alpha1.json
@@ -15029,6 +15264,10 @@ seaweed.seaweedfs.com:
     filename: seaweed.seaweedfs.com/s3identity_v1.json
     kind: s3identity
     name: s3identity_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/bucketnotification_v1.json
+    kind: bucketnotification
+    name: bucketnotification_v1
 secret-sync.gke.io:
   - apiVersion: secret-sync.gke.io/v1
     filename: secret-sync.gke.io/secretsync_v1.json
@@ -16566,6 +16805,11 @@ trident.netapp.io:
     filename: trident.netapp.io/tridentactionsnapshotrestore_v1.json
     kind: tridentactionsnapshotrestore
     name: tridentactionsnapshotrestore_v1
+trust-manager.io:
+  - apiVersion: trust-manager.io/v1alpha2
+    filename: trust-manager.io/clusterbundle_v1alpha2.json
+    kind: clusterbundle
+    name: clusterbundle_v1alpha2
 trust.cert-manager.io:
   - apiVersion: trust.cert-manager.io/v1alpha1
     filename: trust.cert-manager.io/bundle_v1alpha1.json
